@@ -1,13 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-main {
-    padding: 5px;
-}
-
-footer {
-    padding: 15px 5px;
-    font-size: 0.8em;
-    color: #666666;
-}
+					body {
+						font-family: Arial, sans-serif;
+					}
+					
+					main {
+						padding: 5px;
+					}
+					
+					label {
+						width: 120px;
+						float: left;
+						clear: left;
+						display: block;
+						text-align: right;
+						padding-right: 10px;
+					}
+					
+					fieldset {
+						width: 350px;
+						border: 2px ridge #808080;
+					}
+					
+					input[type="radio"] {
+						margin-right: 15px;
+					}
+					
+					input[type="submit"] {
+						margin-left: 130px;
+						margin-top: 20px
+					}
+					
+					footer {
+						padding: 15px 5px;
+						font-size: 0.8em;
+						color: #666666;
+					}
+					
+					@media only screen and (max-width: 480px) {
+						label {
+							width: 100%;
+							text-align: left;
+						}
+						input[type="text"] {
+							display: block;
+							width: 100%;
+						}
+						input[type="submit"] {
+							margin-top: 20px;
+							margin-left: auto;
+						}
+						input[type="email"] {
+							width: 100%;
+						}
+						textarea {
+							width: 100%;
+						}
+					}
